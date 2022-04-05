@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 module "ec2" {
-    source = "./"
+    source = "../"
 
       vpc_region  = local.workspace["vpc_region"]
       env_name = local.workspace["env_name"]
