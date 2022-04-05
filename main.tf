@@ -12,7 +12,7 @@ provider "aws" {
 	region  = local.workspace["vpc_region"]
 }
 
-module "ec2vpc" {
+module "ec2" {
     source = "./"
 
       vpc_region  = local.workspace["vpc_region"]
